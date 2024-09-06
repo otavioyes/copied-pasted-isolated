@@ -2,7 +2,7 @@
 #include <locale>
 
 
-int maximum (int a, int b);
+inline int maximum (int a, int b);
 
 int main()
 {
@@ -12,7 +12,7 @@ int main()
     int a{0}, b{0};
 
     //std::cout << maximum(a, b) << '\n';
-    a = 50;
+    a = 500;
     b = 90;
 
    std::cout << maximum(a, b) << '\n';
@@ -24,7 +24,7 @@ int main()
 int maximum (int a, int b)
 {
     //operador ternário
-    std::cout << ((a > b) ? "O valor de A é = " : "O valor de B é = ") << (a > b ? a : b) << '\n';
+    std::cout << ((a > b) ? "O valor de A é = " : "O valor de B é = ");
 
     return a > b ? a : b;
 }
